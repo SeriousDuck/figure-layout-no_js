@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.block {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.block__left {
+    background-color: #333;
+    color: #fff;
+    padding: 100px 40px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.title {
+    font-weight:400;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.content__left {
+    display: grid;
+    align-content: end;
+    border-left: 2px solid #ddd;
+    padding-left: 40px;
+    margin-top: 60px;
+}
+
+.content__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.content__text {
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1em;
+    opacity: 0.8;
+}
+
+.block__right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding: 150px 50px;
+    grid-gap: 60px;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    display: grid;      
+    justify-items: center;
+    text-align: center; 
+}
+
+.card__img {
+    width: 90px;
+    height: 80px;
+    background-color: #333;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+.card__img svg {
+    width: 30%;
+    height: 30%;
+}
+
+.card__img path {
+    fill: #fff;
+}
+
+.cars__title {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #777;
+}
+
+.card__text {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #777;
+    line-height: 1em;
+}

@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1500px; 
+    margin: 0 auto;   
+}
+
+
+.line {
+    position: absolute;
+    content: '';
+    height: 50vh;
+    width: 30px;
+    top: 0;
+    left: 0;
+    background-color: #444;
+}
+
+.content__top {
+    padding: 100px 0 150px;
+    gap: 10px;
+}
+
+.content__top-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}
+
+.content__top-text {
+    max-width: 300px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.content__bottom {
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.content__bottom-list {
+    --size: 400px;
+    display: grid; 
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    height: var(--size);
+    width: var(--size);
+}
+
+.circle {
+    --size: 250px;
+    content: '';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--size);
+    width:  var(--size); 
+    background-color: #444;
+    border-radius: 50%;
+}
+
+.second-sircle {
+    border: 1px solid #444;
+    background-color: #fff;
+}
+
+.item__circle {
+    max-width: 200px;
+    color: #fff;
+    display: grid;
+    text-align: center;
+}
+
+.first__sircle-title {
+    font-size: 37px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-align: left;
+}
+
+.second__sircle-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.second__sircle-text {
+    color: #444;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.third__sircle-title {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 25px;
+}
+
+.third__sircle-text {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.bottom-text {
+    max-width: 250px;
+    position: relative;
+    font-size: 11px;
+    letter-spacing: 2px;    
+    padding-left: 40px;
+}
+
+.bottom-text::before {
+    --size: 17px;
+    content: '';
+    display: block;
+    position: absolute;
+    height: var(--size);
+    width: var(--size);
+    left: 0;
+    background-color: #444;
+}
